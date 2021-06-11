@@ -5,10 +5,10 @@ import { RestaurantsModule } from './restaurants/restaurants.module';
 
 @Module({
   imports: [
+    RestaurantsModule,
     GraphQLModule.forRoot({
       autoSchemaFile: true,
     }),
-    RestaurantsModule,
   ],
   controllers: [],
   providers: [],
